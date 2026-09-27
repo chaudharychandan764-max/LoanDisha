@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LoanDisha - लोन, EMI, CIBIL और personal finance की आसान हिंदी जानकारी।">
+  <title>LoanDisha - लोन की सही जानकारी, आसान भाषा में</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html">Loan<span>Disha</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#loans">लोन</a>
+      <a href="#calculator">EMI Calculator</a>
+      <a href="#guides">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">हिंदी में आसान Finance Guide</div>
+      <h1>लोन की सही जानकारी,<br><span>आसान भाषा में।</span></h1>
+      <p>LoanDisha पर Personal Loan, Business Loan, EMI, CIBIL और सरकारी योजनाओं से जुड़ी उपयोगी जानकारी पढ़ें।</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#calculator">EMI Calculate करें</a>
+        <a class="btn secondary" href="#loans">Loan Guides देखें</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>EMI Calculator</h3>
+      <p>लोन की अनुमानित मासिक EMI तुरंत जानें।</p>
+      <div class="mini-stat"><b>₹1,00,000</b><span>Loan Amount</span></div>
+      <div class="mini-stat"><b>12%</b><span>Interest Rate</span></div>
+      <div class="mini-stat"><b>12 महीने</b><span>Tenure</span></div>
+      <a href="#calculator" class="btn primary full">Calculator खोलें →</a>
+    </div>
+  </div>
+</section>
+
+<section id="loans" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">LOAN GUIDES</div><h2>आप किस लोन के बारे में जानना चाहते हैं?</h2></div>
+      <p>बुनियादी जानकारी आसान हिंदी में।</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">👤</div><h3>Personal Loan</h3><p>Eligibility, interest, documents और EMI की जानकारी।</p><a href="personal-loan.html">पढ़ें →</a></article>
+      <article class="card"><div class="icon">🏪</div><h3>Business Loan</h3><p>व्यवसाय के लिए loan options और जरूरी बातों की जानकारी।</p><a href="business-loan.html">पढ़ें →</a></article>
+      <article class="card"><div class="icon">🏛️</div><h3>Mudra Loan</h3><p>सरकारी योजना से जुड़ी सामान्य जानकारी और सावधानियाँ।</p><a href="mudra-loan.html">पढ़ें →</a></article>
+      <article class="card"><div class="icon">🏠</div><h3>Home Loan</h3><p>Home loan, EMI और repayment से जुड़ी बुनियादी जानकारी।</p><a href="home-loan.html">पढ़ें →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="calculator" class="section alt">
+  <div class="container calc-wrap">
+    <div>
+      <div class="eyebrow">EMI CALCULATOR</div>
+      <h2>अपनी अनुमानित EMI जानें</h2>
+      <p>Loan amount, annual interest rate और tenure भरें।</p>
+      <div class="formula-note">यह calculator सामान्य reducing-balance EMI formula पर आधारित अनुमान देता है। वास्तविक lender charges अलग हो सकते हैं।</div>
+    </div>
+    <div class="calculator">
+      <label>Loan Amount (₹)<input id="amount" type="number" value="100000" min="1"></label>
+      <label>Annual Interest Rate (%)<input id="rate" type="number" value="12" min="0" step="0.01"></label>
+      <label>Tenure (Months)<input id="months" type="number" value="12" min="1"></label>
+      <button class="btn primary full" onclick="calculateEMI()">EMI Calculate करें</button>
+      <div class="result">
+        <span>मासिक EMI</span><strong id="emi">₹8,885</strong>
+        <div class="result-row"><span>कुल ब्याज</span><b id="interest">₹6,619</b></div>
+        <div class="result-row"><span>कुल भुगतान</span><b id="total">₹1,06,619</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guides" class="section">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">POPULAR GUIDES</div><h2>काम की जानकारी</h2></div></div>
+    <div class="articles">
+      <a class="article" href="guide-cibil.html"><span>01</span><div><h3>CIBIL Score क्या है?</h3><p>Credit score की बुनियादी जानकारी और loan eligibility पर इसका सामान्य प्रभाव।</p></div></a>
+      <a class="article" href="guide-eligibility.html"><span>02</span><div><h3>Loan Eligibility कैसे तय होती है?</h3><p>Income, credit history और अन्य सामान्य factors समझें।</p></div></a>
+      <a class="article" href="guide-fraud.html"><span>03</span><div><h3>Loan Fraud से कैसे बचें?</h3><p>OTP, advance fee और fake loan offers से जुड़ी सावधानियाँ।</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div><h2>LoanDisha क्या है?</h2><p>LoanDisha एक informational website है। हम बैंक/NBFC नहीं हैं और किसी loan approval की guarantee नहीं देते।</p></div>
+    <div><strong>✓ सरल हिंदी</strong><strong>✓ Practical guides</strong><strong>✓ EMI Calculator</strong></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><div class="logo">Loan<span>Disha</span></div><p>लोन और personal finance की आसान हिंदी जानकारी।</p></div>
+    <div><h4>Pages</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a></div>
+    <div><h4>Contact</h4><p>Email: <b>ChaudharyChandan764@gmail.com</b></p><p>Owner: <b>Chandan Chaudhary</b></p></div>
+  </div>
+  <div class="copyright">© 2026 LoanDisha. All rights reserved.</div>
+
+        <div class="footer-contact">
+          <strong>Chandan Chaudhary</strong><br>
+          Email: <a href="mailto:ChaudharyChandan764@gmail.com">ChaudharyChandan764@gmail.com</a><br>
+          Mobile: <a href="tel:8577056690">8577056690</a>
+        </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
